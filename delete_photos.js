@@ -6,7 +6,7 @@ const maxImageCount = "ALL_PHOTOS";
 // Selector for Images and buttons
 const ELEMENT_SELECTORS = {
     checkboxClass: '.ckGgle',
-    deleteButton: 'button[title="Delete"]',
+    deleteButton: 'button[title="Удалить"]',
     confirmationButton: '#yDmH0d > div.llhEMd.iWO5td > div > div.g3VIld.V639qd.bvQPzd.oEOLpc.Up8vH.J9Nfi.A9Uzve.iWO5td > div.XfpsVe.J9fJmf > button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.nCP5yc.kHssdc.HvOprf'
 }
 
@@ -33,14 +33,6 @@ let deleteTask = setInterval(() => {
         checkboxes = document.querySelectorAll(ELEMENT_SELECTORS['checkboxClass']);
 
     } while (checkboxes.length <= 0 && attemptCount++ < MAX_RETRIES);
-
-
-    if (checkboxes.length <= 0) {
-        console.log("[INFO] No more images to delete.");
-        clearInterval(deleteTask);
-        console.log("[SUCCESS] Tool exited.");
-        return;
-    }
 
     imageCount += checkboxes.length;
 
