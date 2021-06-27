@@ -1,6 +1,6 @@
 # Адаптированная русская версия
 1) Исправлено определение кнопки удалить.
-2) Удалён блок кода, отвечающий за остановку при необнаружении файлов. Этот блок приводил к преждевременной остановке выполнения. Сейчас скрипт продолжает выполняться даже если не оосталось фотографий, требуется перезагрузка страницы.
+2) Удалён блок кода, отвечающий за остановку при необнаружении файлов. Этот блок приводил к преждевременной остановке выполнения. Сейчас скрипт продолжает выполняться даже если не осталось фотографий, требуется перезагрузка страницы.
 
 # Google Photos Delete All Tool
 If you have ever wanted to delete your thousands of photos from the [Google Photos](https://photos.google.com/) but failed to find an easy way to do so, then this is the tool for you. This script goes through all your photos in Google Photos app on the desktop and deletes them. You can visually see the process while it happens!
